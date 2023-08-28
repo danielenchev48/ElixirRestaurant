@@ -1,0 +1,33 @@
+@import "../../../../../../../index.scss";
+
+.four-people-table-main-wrapper {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  border-radius: 5px;
+  transition: ease 0.5s;
+  cursor: pointer;
+  transform: rotate(315deg);
+
+  &:hover {
+    box-shadow: 0px 0px 10px $primary-red;
+  }
+
+  .four-people-table-main {
+    width: 60px;
+    height: 60px;
+    border: 1px solid $primary-black;
+    margin: 35px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    pointer-events: none;
+  }
+
+  .four-people-table-main-number {
+    margin: 0;
+    transform: rotate(45deg);
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,58 @@
+@import "../../../../index.scss";
+
+.reservation-form-wrapper {
+  background-color: $primary-light-grey;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  box-shadow: 0px 1px 5px #b6aeae;
+  .form-header {
+    padding: 40px 0px;
+    color: $primary-white;
+    font-size: 3rem;
+    background-color: $third-red;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  .reservation-form {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+
+    .reservation-submit-btn {
+      background-color: $third-red;
+      margin-left: 89px;
+      text-transform: uppercase;
+      font-size: 18px;
+      padding: 10px 25px;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    .input-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0px;
+
+      label {
+        color: $third-red;
+        font-weight: bolder;
+        // text-shadow: 0px 0px 2px black;
+      }
+
+      input,
+      select {
+        width: 220px;
+        margin-bottom: 10px;
+        height: 30px;
+        padding: 1px 2px;
+        border: 1px solid $third-red;
+        inline-size: none;
+      }
+    }
+  }
+}

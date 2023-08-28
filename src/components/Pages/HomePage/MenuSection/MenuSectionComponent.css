@@ -1,0 +1,49 @@
+.menu-section-wrapper {
+  position: relative;
+}
+.menu-section-wrapper .left-side-img {
+  left: 0%;
+}
+.menu-section-wrapper .right-side-img {
+  right: 0%;
+}
+.menu-section-wrapper .right-side-img,
+.menu-section-wrapper .left-side-img {
+  position: absolute;
+  top: 0%;
+  height: auto;
+  max-height: 790px;
+  max-width: 305px;
+  transition: ease-in all 1.5s;
+  opacity: 1;
+  transform: translateY(0);
+}
+.menu-section-wrapper .invisible {
+  transition: all ease-in;
+  opacity: 0;
+  transform: translateY(-15%);
+}
+@media screen and (max-width: 1720px) {
+  .menu-section-wrapper .right-side-img,
+  .menu-section-wrapper .left-side-img {
+    max-width: 180px;
+    height: auto;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+@media screen and (max-width: 1625px) {
+  .menu-section-wrapper .right-side-img,
+  .menu-section-wrapper .left-side-img {
+    display: none;
+  }
+  .menu-section-wrapper .invisible {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .menu-section-wrapper {
+    position: static;
+  }
+}/*# sourceMappingURL=MenuSectionComponent.css.map */
