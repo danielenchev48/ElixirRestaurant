@@ -25,7 +25,8 @@
     "nodemailer-express-handlebars": "^6.1.0",
     "npm": "^9.8.0",
     "passport": "^0.6.0",
-    "passport-local": "^1.0.0"
+    "passport-local": "^1.0.0",
+    "stripe": "^12.16.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.22"

@@ -17,6 +17,7 @@ const port = process.env.PORT || 5000;
 const menuRouter = require("./routes/Menu.router");
 const userRouter = require("./routes/User.router");
 const contactsRouter = require("./routes/Contact.router");
+const productsRouter = require("./routes/Products.router")
 
 //
 app.use(express.static("./public"));
@@ -39,6 +40,7 @@ app.use(passport.session());
 app.use("/api/v1/menu", menuRouter);
 app.use("/api/v1/user", userRouter);
 app.use("/api/v1/contacts", contactsRouter);
+app.use("/api/v1/products", productsRouter)
 
 const start = async () => {
   try {
