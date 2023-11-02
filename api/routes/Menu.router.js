@@ -1,19 +1,19 @@
-const express = require("express");
+const express = require('express');
 const router = express.Router();
 
 const {
-  getAllMenuColumns,
-  getSingleMenuColumn,
-  addMenuColumn,
-  updateMenuColumn,
-  deleteMenuColumn,
-} = require("../controllers/Menu.controller");
+    getAllMenuColumns,
+    getSingleMenuColumn,
+    addMenuColumn,
+    updateMenuColumn,
+    deleteMenuColumn,
+} = require('../controllers/Menu.controller');
 
-router.route("/").post(addMenuColumn).get(getAllMenuColumns);
+router.route('/').post(addMenuColumn).get(getAllMenuColumns);
 router
-  .route("/:id")
-  .get(getSingleMenuColumn)
-  .delete(deleteMenuColumn)
-  .put(updateMenuColumn);
+    .route('/:id')
+    .get(getSingleMenuColumn)
+    .delete(deleteMenuColumn)
+    .put(updateMenuColumn);
 
 module.exports = router;

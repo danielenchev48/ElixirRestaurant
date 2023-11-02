@@ -1,6 +1,7 @@
 @import '../../../index.scss';
 
 .header-section {
+    margin-top: 50px;
     div {
         max-width: 550px;
     }
@@ -8,12 +9,11 @@
 
 .slider-section,
 .history-section {
-    p>span {
+    p > span {
         color: red;
         font-weight: 700;
     }
 }
-
 
 .history-section {
     p {
@@ -45,16 +45,11 @@
     }
 }
 
-
-
 @media screen and (max-width: 725px) {
-
     .slider-section,
     .history-section {
-
         img {
             display: none;
         }
-
     }
 }

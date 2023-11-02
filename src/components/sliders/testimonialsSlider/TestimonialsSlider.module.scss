@@ -11,7 +11,6 @@
     align-items: center;
     background-attachment: fixed;
 
-
     .message {
         position: absolute;
         width: 50%;
@@ -19,8 +18,7 @@
         min-width: 300px;
         padding-top: 50px;
 
-
-        @media screen and (max-width:1024px) {
+        @media screen and (max-width: 1024px) {
             padding-top: 50px;
             width: 70%;
         }
@@ -29,7 +27,6 @@
             display: flex;
             justify-content: space-between;
             padding-bottom: 30px;
-
 
             img {
                 position: absolute;
@@ -40,7 +37,7 @@
                 height: 80px;
                 width: 80px;
 
-                @media screen and (max-width:768px) {
+                @media screen and (max-width: 768px) {
                     height: 60px;
                     width: 60px;
                     top: -15px;
@@ -53,11 +50,10 @@
                 font-weight: bold;
                 font-size: 25px;
                 position: relative;
-
             }
 
             h2:after {
-                content: "";
+                content: '';
                 height: 3px;
                 width: 20%;
                 display: inline-block;
@@ -66,8 +62,6 @@
                 bottom: -10px;
                 left: 0;
             }
-
-
 
             .quote {
                 font-size: 30px;
@@ -85,7 +79,7 @@
     line-height: 30px;
     color: $primary-white;
 
-    @media screen and (min-width:1680px) {
+    @media screen and (min-width: 1680px) {
         font-size: 26px;
         line-height: 50px;
     }
@@ -94,9 +88,6 @@
 .testimonialName {
     color: $secondary-red;
     font-weight: bold;
-
-
-
 }
 
 .testimonialDots {
@@ -112,7 +103,6 @@
         position: relative;
         overflow: hidden;
 
-
         button {
             padding: 0;
             background: none;
@@ -122,18 +112,12 @@
             position: absolute;
             z-index: 5;
             top: 0;
-
         }
-
-
     }
 
     :global {
         .slick-active {
             background-color: $primary-green;
         }
-
     }
-
-
 }

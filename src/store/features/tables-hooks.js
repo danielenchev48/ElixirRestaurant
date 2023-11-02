@@ -1,7 +1,9 @@
-import { useSelector } from "react-redux";
+import { useSelector } from 'react-redux';
 
 export const useGetAllTables = () =>
-  useSelector((state) => state.tables.tables);
+    useSelector((state) => state.tables.tables);
 
 export const useGetAllBarSpots = () =>
-  useSelector((state) => state.tables.barSpots);
+    useSelector((state) => state.tables.barSpots);
+export const useGetSelectedTableOrBarSpot = () =>
+    useSelector((state) => state.tables.selectedTableOrBarSpot);

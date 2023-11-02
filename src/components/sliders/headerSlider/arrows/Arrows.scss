@@ -23,9 +23,7 @@ $nextArrowImg: url(src/assets/img/btn-next.png);
     display: inline-block;
     background-size: cover;
     border-radius: 100%;
-
 }
-
 
 .slick-next::before {
     background-image: $nextArrowImg;
@@ -35,5 +33,4 @@ $nextArrowImg: url(src/assets/img/btn-next.png);
     display: inline-block;
     background-size: cover;
     border-radius: 100%;
-
 }
