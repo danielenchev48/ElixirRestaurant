@@ -284,6 +284,7 @@
             .modal-image-wrapper {
                 width: 300px;
                 height: 250px;
+
             }
 
             .modal-product-description {
@@ -312,4 +313,14 @@
         }
     }
 
+}
+
+.modal-dialog {
+    .modal-content {
+        .modal-image-wrapper {
+            img {
+                width: 100%;
+            }
+        }
+    }
 }

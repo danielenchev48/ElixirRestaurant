@@ -34,7 +34,7 @@ const GalleryItemModal = ({ productData, show, setShow }) => {
                 </Modal.Header>
                 <Modal.Body>
                     <div className="modal-image-wrapper">
-                        <img src={productData.image} alt="Product image" />
+                        <img src={productData.image} alt="Product image" className='modal-image' />
                     </div>
                     <p className="modal-product-description mt-1">
                         {description}
