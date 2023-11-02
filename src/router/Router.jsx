@@ -6,7 +6,7 @@ import ErrorPage from '../components/Pages/ErrorPage/ErrorPage';
 
 const router = createBrowserRouter([
     {
-        path: '/',
+        path: '/ElixirRestaurant',
         element: <RootLayout />,
         errorElement: <ErrorPage />,
         children: [
