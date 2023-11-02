@@ -172,13 +172,16 @@
         .accountSettings {
             position: absolute;
             color: white;
-            top: 10px;
-            right: 40px;
+            top: 0;
+            right: 50px;
+            text-align: center;
             cursor: pointer;
+            font-size: 14px;
+            border-bottom: solid 1px;
         }
 
         :hover {
-            color: rgb(151, 89, 89);
+            color: red;
         }
     }
 
