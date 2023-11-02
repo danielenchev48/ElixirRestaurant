@@ -128,11 +128,9 @@
 
             .icon {
                 display: inline-block;
-                background: radial-gradient(
-                    circle at 10.6% 22.1%,
-                    rgb(206, 18, 18) 0%,
-                    rgb(122, 21, 21) 100.7%
-                );
+                background: radial-gradient(circle at 10.6% 22.1%,
+                        rgb(206, 18, 18) 0%,
+                        rgb(122, 21, 21) 100.7%);
                 padding: 7px 14px;
                 border-radius: 50px;
                 width: 40px;
@@ -183,135 +181,135 @@
             top: 45%;
         }
     }
-}
 
-//Modal
-.modal-header {
-    .btn-close {
-        background-color: $primary-white;
-    }
-}
-
-.modal-content {
-    background-color: $secondary-muddy-brown;
-    width: 700px;
-    right: 20%;
-}
-
-.modal-header {
-    .h4 {
-        text-align: center;
-        margin: 0 auto;
-        font-weight: bold;
-        color: $primary-red;
-        font-size: 2em;
-    }
-
-    button {
-        margin-left: 0 !important;
-    }
-}
-
-.modal-image-wrapper {
-    width: 450px;
-    height: 350px;
-    margin: 0 auto;
-
-    img {
-        width: 100%;
-        height: 100%;
-    }
-}
-
-.modal-product-description {
-    color: #fff;
-    font-size: 1.1em;
-}
-
-@media screen and (max-width: 1000px) {
-    .row {
-        gap: 30px;
-    }
-
-    .restaurant-img {
-        width: 400px !important;
-        height: 350px !important;
-        margin-left: 100px !important;
-    }
-
-    .left-side-img,
-    .right-side-img,
-    .second-left-side-img,
-    .dessert-right-side-img {
-        max-height: 650px !important;
-    }
-
-    .left-side-img {
-        top: 0 !important;
-    }
-}
-
-@media screen and (max-width: 750px) {
-    h2 {
-        font-size: 2em !important;
-    }
-
-    h5 {
-        font-size: 1em !important;
-    }
-
-    ._headerDecorator_1u99p_115 {
-        margin-bottom: -50px !important;
-    }
-
-    .gallery-image-wrapper {
-        margin: 0 auto;
-    }
-
-    ._headerDecorator_1u99p_115 {
-        img {
-            width: 25px;
+    .modal-header {
+        .btn-close {
+            background-color: $primary-white;
         }
     }
 
-    .left-side-img,
-    .right-side-img,
-    .second-left-side-img,
-    .dessert-right-side-img {
-        display: none;
+    .modal-content {
+        background-color: $secondary-muddy-brown;
+        width: 700px;
+        right: 20%;
     }
 
-    .modal-content {
+    .modal-header {
+        .h4 {
+            text-align: center;
+            margin: 0 auto;
+            font-weight: bold;
+            color: $primary-red;
+            font-size: 2em;
+        }
+
+        button {
+            margin-left: 0 !important;
+        }
+    }
+
+    .modal-image-wrapper {
         width: 450px;
-        margin-left: 130px;
+        height: 350px;
+        margin: 0 auto;
 
-        .modal-image-wrapper {
-            width: 300px;
-            height: 250px;
-        }
-
-        .modal-product-description {
-            font-size: 1em;
+        img {
+            width: 100%;
+            height: 100%;
         }
     }
-}
 
-@media screen and (max-width: 400px) {
-    ._headerDecorator_1cuf3_115 {
-        margin-left: 20px !important;
+    .modal-product-description {
+        color: #fff;
+        font-size: 1.1em;
     }
 
-    .restaurant-img {
-        width: 370px !important;
-        height: 300px !important;
-        margin-left: 60px !important;
-    }
-}
+    @media screen and (max-width: 1000px) {
+        .row {
+            gap: 30px;
+        }
 
-@media screen and (max-width: 480px) {
-    .modal-content {
-        width: 350px;
-        margin-left: 80px;
-        margin-top: 150px;
+        .restaurant-img {
+            width: 400px !important;
+            height: 350px !important;
+            margin-left: 100px !important;
+        }
+
+        .left-side-img,
+        .right-side-img,
+        .second-left-side-img,
+        .dessert-right-side-img {
+            max-height: 650px !important;
+        }
+
+        .left-side-img {
+            top: 0 !important;
+        }
     }
+
+    @media screen and (max-width: 750px) {
+        h2 {
+            font-size: 2em !important;
+        }
+
+        h5 {
+            font-size: 1em !important;
+        }
+
+        ._headerDecorator_1u99p_115 {
+            margin-bottom: -50px !important;
+        }
+
+        .gallery-image-wrapper {
+            margin: 0 auto;
+        }
+
+        ._headerDecorator_1u99p_115 {
+            img {
+                width: 25px;
+            }
+        }
+
+        .left-side-img,
+        .right-side-img,
+        .second-left-side-img,
+        .dessert-right-side-img {
+            display: none;
+        }
+
+        .modal-content {
+            width: 450px;
+            margin-left: 130px;
+
+            .modal-image-wrapper {
+                width: 300px;
+                height: 250px;
+            }
+
+            .modal-product-description {
+                font-size: 1em;
+            }
+        }
+    }
+
+    @media screen and (max-width: 400px) {
+        ._headerDecorator_1cuf3_115 {
+            margin-left: 20px !important;
+        }
+
+        .restaurant-img {
+            width: 370px !important;
+            height: 300px !important;
+            margin-left: 60px !important;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .modal-content {
+            width: 350px;
+            margin-left: 80px;
+            margin-top: 150px;
+        }
+    }
+
 }

@@ -112,7 +112,7 @@
 
             @media screen and (max-width: 750px) {
                 left: 0;
-                margin-left: 30px;
+                margin-left: 70px;
             }
         }
 
@@ -204,7 +204,6 @@
 .login-modal:not(.order-history-modal) {
     .modal-dialog {
         .modal-content {
-            background-color: transparent;
             border: none;
             display: flex;
             align-items: center;
@@ -212,6 +211,8 @@
             background-size: cover;
             background-position: center;
             overflow: hidden;
+            right: 0% I !important;
+            width: 100%;
 
             .input-container {
                 @media screen and (max-width: 750px) {
@@ -232,7 +233,14 @@
                         }
                     }
                 }
+
             }
+
+            @media screen and (max-width: 750px) {
+                padding: 0;
+                width: 100%;
+            }
+
 
             :has(> form > .Reset) {
                 text-align: center;
@@ -306,6 +314,23 @@
             input[value=''] {
                 background-color: $secondary-muddy-brown;
                 color: $primary-white;
+            }
+        }
+
+        form {
+            .haveAccount {
+                display: flex;
+                margin-bottom: 20px;
+                font-size: 17px;
+                justify-content: center;
+
+                p {
+                    margin: 0;
+                }
+
+                .BtnLogin {
+                    color: red;
+                }
             }
         }
 
@@ -421,7 +446,7 @@ input:invalid[focused='true'] {
     border: 1px solid red;
 }
 
-input:invalid[focused='true'] ~ span {
+input:invalid[focused='true']~span {
     display: block;
 }
 
