@@ -50,13 +50,13 @@ const GalleryPage = () => {
                             {product.title && (
                                 <Col lg={12} className="mt-5 mb-5">
                                     {product.title ===
-                                    'Our Delicious Pizzas' ? (
+                                        'Our Delicious Pizzas' ? (
                                         <PizzasHeading />
                                     ) : product.title ===
-                                      'Savor Our Scrumptious Salads' ? (
+                                        'Savor Our Scrumptious Salads' ? (
                                         <SaladsHeading />
                                     ) : product.title ===
-                                      'Indulge in Irresistible Desserts' ? (
+                                        'Indulge in Irresistible Desserts' ? (
                                         <DessertsHeading />
                                     ) : null}
                                 </Col>

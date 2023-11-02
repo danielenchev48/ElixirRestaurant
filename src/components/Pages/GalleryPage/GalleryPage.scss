@@ -160,17 +160,48 @@
         }
     }
 
-    .col-lg-12:nth-of-type(2) {
-        margin-right: 120px !important;
-    }
-
     .gallery-item-center {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        // align-items: center;
         text-align: center;
+
+        @media screen and (max-width:1000px) {
+            width: unset;
+        }
+
+        div {
+            width: 320px;
+        }
+
     }
+
+    .gallery-item-center:nth-child(2) {
+        width: unset;
+    }
+
+    .gallery-item-center:nth-child(4) {
+        flex-direction: unset;
+
+        @media screen and (max-width:1000px) {
+            flex-direction: column;
+        }
+    }
+
+    .col-md-6:nth-child(5) {
+
+        @media screen and (max-width:764px) {
+            display: flex;
+            justify-content: center;
+
+            div {
+                width: 320px;
+            }
+        }
+
+    }
+
 
     .restaurant-img {
         width: 500px;
@@ -232,7 +263,7 @@
         .restaurant-img {
             width: 400px !important;
             height: 350px !important;
-            margin-left: 100px !important;
+            // margin-left: 100px !important;
         }
 
         .left-side-img,
