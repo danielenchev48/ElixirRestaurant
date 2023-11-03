@@ -1,0 +1,1 @@
+function r(t){return Object.prototype.toString.call(t).slice(8,-1)}function e(t){return r(t)!=="Object"?!1:t.constructor===Object&&Object.getPrototypeOf(t)===Object.prototype}function n(t){return r(t)==="Array"}function c(t){return r(t)==="Symbol"}export{n as a,c as b,e as i};
