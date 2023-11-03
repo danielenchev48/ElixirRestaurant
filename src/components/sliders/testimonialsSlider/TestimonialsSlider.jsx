@@ -30,7 +30,7 @@ const test = [
         text: 'The food, service, ambience and more was all superb!!! On behalf of us all, fight on!',
     },
     {
-        name: 'Chris Hobbs',
+        name: 'AAAAAAAAAA',
         text: 'As expected, the food was delicious and our servers were so friendly and helpful, we loved them! It was a delightful experience all round.',
     },
     {
