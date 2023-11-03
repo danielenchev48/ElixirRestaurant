@@ -1,4 +1,5 @@
 import './Arrows.scss';
+import arrow from '../../../../assets/images/btn-prev.png';
 
 function PrevArrow(props) {
     const { className, style, onClick } = props;
