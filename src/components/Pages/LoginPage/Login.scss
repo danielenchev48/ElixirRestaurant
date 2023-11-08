@@ -54,6 +54,8 @@
 
     .form {
         padding: 3rem 1.1rem;
+
+
     }
 
     .input-container {
@@ -225,6 +227,7 @@
                 }
 
                 form {
+
                     h4 {
                         // width: 80%;
 
@@ -291,8 +294,10 @@
         padding: 0 41px;
         border-radius: 10px;
         background: $primary-muddy-brown;
+        color: #fff;
 
         .form {
+
             input {
                 background-color: $primary-white;
                 border: none;
@@ -452,4 +457,5 @@ input:invalid[focused='true']~span {
 
 .loginForm {
     padding: 20px 30px;
+    color: white;
 }

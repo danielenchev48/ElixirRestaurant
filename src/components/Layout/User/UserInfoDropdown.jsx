@@ -64,16 +64,16 @@ const UserInfoDropdown = ({ show, setShow }) => {
                 // userData.id ? (
                 <>
                     <div className="gadgets">
-                        <div className="orderHistory-btn">
+                        <div className="orderHistory-btn" onClick={() => {
+                            navigate('/ElixirRestaurant/account/orders');
+                            toTop()
+                            setShow(false);
+                        }}>
                             <FontAwesomeIcon
                                 icon={faRectangleList}
                                 onMouseEnter={() => setIsHovered(true)}
                                 onMouseLeave={() => setIsHovered(false)}
-                                onClick={() => {
-                                    navigate('/ElixirRestaurant/account/orders');
-                                    toTop()
-                                    setShow(false);
-                                }}
+
                             />
                             <p className="gadget-description first">
                                 Check Order History

@@ -1,11 +1,13 @@
 @import '../../../index.scss';
 
 .header-section {
-    margin-top: 50px;
+    margin-top: 80px;
 
     div {
         max-width: 550px;
     }
+
+
 }
 
 .slider-section,
@@ -14,9 +16,19 @@
         color: red;
         font-weight: 700;
     }
+
+    .row {
+        align-items: center;
+
+        .col:nth-child(2) {
+            display: flex;
+            justify-content: center;
+        }
+    }
 }
 
 .history-section {
+
     p {
         text-align: left;
         margin-top: 20px;
@@ -32,6 +44,7 @@
 
 .slider-section {
     padding: 0px;
+    margin-bottom: 80px;
 
     p:nth-child(1) {
         margin-top: 30px;
@@ -39,10 +52,6 @@
 
     p {
         text-align: left;
-    }
-
-    img {
-        // margin-bottom: 50px;
     }
 }
 
@@ -52,6 +61,17 @@
     .history-section {
         img {
             display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .history-section {
+        .row {
+            .col:nth-child(2) {
+                display: inline-block;
+            }
         }
     }
 }
