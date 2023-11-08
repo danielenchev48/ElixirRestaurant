@@ -1,4 +1,4 @@
-import pizza from '../../../assets/images/about01.jpg';
+import pizza from '../../../assets/images/about01.png';
 import sliderImg from '../../../assets/images/about04.jpg';
 import ornamentImg from '../../../assets/images/ornament.png';
 

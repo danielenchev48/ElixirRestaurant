@@ -55,11 +55,15 @@
         left: 0%;
         top: 50%;
         max-height: 740px;
+        animation: leftImagesAnimation 2s ease-in;
+
     }
 
     .dessert-right-side-img {
         top: 87%;
         right: 0%;
+        animation: rightImagesAnimation 2s ease-in;
+
     }
 
     h2 {
@@ -221,7 +225,7 @@
     }
 
     .modal-content {
-        background-color: $secondary-muddy-brown;
+        background-color: red !important;
         width: 700px;
         right: 20%;
     }
@@ -347,12 +351,18 @@
 
 }
 
-.modal-dialog {
-    .modal-content {
-        .modal-image-wrapper {
-            img {
-                width: 100%;
+.galleryModal {
+    .modal-dialog {
+        .modal-content {
+            background-color: rgba(26, 11, 0, 0.37);
+
+            .modal-image-wrapper {
+                img {
+                    width: 100%;
+                }
             }
+
         }
+
     }
 }

@@ -28,8 +28,8 @@ const GalleryItemModal = ({ productData, show, setShow }) => {
 
     return (
         <div className="gallery-item-modal-wrapper">
-            <Modal show={show} onHide={handleClose}>
-                <Modal.Header closeButton>
+            <Modal show={show} onHide={handleClose} className='galleryModal'>
+                <Modal.Header >
                     <Modal.Title>{productData.productName}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>

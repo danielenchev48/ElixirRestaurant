@@ -7,6 +7,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
     faRectangleList,
     faPizzaSlice,
+    faGear,
+    faGears,
 } from '@fortawesome/free-solid-svg-icons';
 import './UserStyles.scss';
 import 'animate.css';
@@ -39,6 +41,14 @@ const UserInfoDropdown = ({ show, setShow }) => {
         }, 100);
     });
 
+    function toTop() {
+        document.documentElement.scrollTop = 0;
+        window.scrollTo({
+            top: 0,
+            behavior: 'instant'
+        })
+    }
+
     return (
         <div
             className={`user-info ${!show ? 'reverse' : ''}`}
@@ -61,6 +71,7 @@ const UserInfoDropdown = ({ show, setShow }) => {
                                 onMouseLeave={() => setIsHovered(false)}
                                 onClick={() => {
                                     navigate('/ElixirRestaurant/account/orders');
+                                    toTop()
                                     setShow(false);
                                 }}
                             />
@@ -80,7 +91,12 @@ const UserInfoDropdown = ({ show, setShow }) => {
                         >
                             <Login />
                         </UserContext.Provider>
-                        <div className='accountSettings' onClick={() => navigate('/ElixirRestaurant/account')}>Edit</div>
+                        <div className='accountSettings'
+                            onClick={() => {
+                                navigate('/ElixirRestaurant/account');
+                                toTop()
+                            }}>
+                            <FontAwesomeIcon icon={faGears} /></div>
                     </div>
 
                 </>

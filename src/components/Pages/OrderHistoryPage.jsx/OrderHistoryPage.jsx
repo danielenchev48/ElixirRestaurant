@@ -3,8 +3,8 @@ import { useState } from 'react';
 import OrderItem from './OrderItem';
 import './OrderHistoryStyles.scss';
 import { Button } from 'react-bootstrap';
-import rightSideImage from '../../../assets/images/menu_right.jpg';
-import leftSideImage from '../../../assets/images/menu_left.jpg';
+import rightSideImage from '../../../assets/images/menu_right.png';
+import leftSideImage from '../../../assets/images/menu_left.png';
 import axios from 'axios';
 import orderHistoryData from './orderHistoryData';
 

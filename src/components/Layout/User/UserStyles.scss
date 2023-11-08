@@ -172,12 +172,12 @@
         .accountSettings {
             position: absolute;
             color: white;
-            top: 0;
+            top: 10px;
             right: 50px;
             text-align: center;
             cursor: pointer;
             font-size: 14px;
-            border-bottom: solid 1px;
+            // border-bottom: solid 1px;
         }
 
         :hover {
@@ -228,9 +228,6 @@
     }
 
     .user-info {
-        top: 100%;
-        left: 60%;
-
         h4 {
             text-align: center;
             margin: 0 auto !important;

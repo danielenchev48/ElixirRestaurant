@@ -119,9 +119,13 @@ function HeaderSlider() {
                         The Chef creates divine combinations
                     </p>
 
-                    <button className={styles.downArrow}>
-                        <img src={downArrow} alt="arrow" />
-                    </button>
+                    <a href="#menu-section-wrapper">
+
+                        <button className={styles.downArrow} >
+                            <img src={downArrow} alt="arrow" />
+                        </button>
+
+                    </a>
                 </div>
             </div>
         </>

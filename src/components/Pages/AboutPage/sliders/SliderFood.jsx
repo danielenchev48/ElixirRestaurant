@@ -1,8 +1,8 @@
 import SlickSlider from '../../../../assets/slickSlider/SlickSlider';
 import './SliderFood.scss';
-import about01 from '../../../../assets/images/about01.jpg'
-import about02 from '../../../../assets/images/about02.jpg'
-import about03 from '../../../../assets/images/about03.jpg'
+import about01 from '../../../../assets/images/about01.png'
+import about02 from '../../../../assets/images/about02.png'
+import about03 from '../../../../assets/images/about03.png'
 
 function SliderFood() {
     const settings = {

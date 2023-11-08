@@ -1,6 +1,7 @@
 @import '../components/Headings/SingleHeadingGenerator.module.scss';
-
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+
 
 #root {
     margin: 0;
@@ -14,7 +15,8 @@ h1 {
 }
 
 body {
-    background-color: #fff;
+    background: url('../src/assets/images/main-background.webp');
+    background-size: 500px;
 }
 
 h2,
@@ -29,5 +31,5 @@ button {
 
 .modal-content {
     background-color: unset;
-    color: white;
+    // color: white;
 }

@@ -12,9 +12,10 @@ const ThreeColumnSection = ({
     children,
     headerDecoration,
     ref,
+    id,
 }) => {
     return (
-        <section ref={ref} className={className}>
+        <section ref={ref} className={className} id={id}>
             {children}
             <div className="header-wrapper-main">
                 {headerDecoration && (

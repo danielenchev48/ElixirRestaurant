@@ -8,8 +8,8 @@ import {
     RestaurantHeading,
     SaladsHeading,
 } from './GalleryHeading';
-import rightSideImage from '../../../assets/images/menu_right.jpg';
-import leftSideImage from '../../../assets/images/menu_left.jpg';
+import rightSideImage from '../../../assets/images/menu_right.png';
+import leftSideImage from '../../../assets/images/menu_left.png';
 import rightDessertImage from '../../../assets/images/menu-right-desser.png';
 import galleryData from './galleryData';
 import { Container, Row, Col } from 'react-bootstrap';

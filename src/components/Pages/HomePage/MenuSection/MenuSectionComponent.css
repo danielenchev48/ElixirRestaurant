@@ -1,5 +1,7 @@
 .menu-section-wrapper {
     position: relative;
+
+
 }
 
 .menu-section-wrapper .right-side-img,
@@ -29,6 +31,7 @@
 }
 
 @media screen and (max-width: 1720px) {
+
     .menu-section-wrapper .right-side-img,
     .menu-section-wrapper .left-side-img {
         max-width: 180px;
@@ -39,6 +42,7 @@
 }
 
 @media screen and (max-width: 1620px) {
+
     .menu-section-wrapper .right-side-img,
     .menu-section-wrapper .left-side-img {
         max-width: 130px;
@@ -47,6 +51,7 @@
 }
 
 @media screen and (max-width: 1530px) {
+
     .menu-section-wrapper .right-side-img,
     .menu-section-wrapper .left-side-img {
         max-width: 120px;
@@ -55,6 +60,7 @@
 }
 
 @media screen and (max-width: 1500px) {
+
     .menu-section-wrapper .right-side-img,
     .menu-section-wrapper .left-side-img {
         display: none;

@@ -20,10 +20,12 @@ const SectionComponentTemplate = ({
     headerDecoration,
     sliderComponent,
     ref,
+    id,
 }) => {
     if (columnsCount === '1') {
         return (
             <SingleColumnSection
+                id={id}
                 className={className}
                 ref={ref}
                 header={header}
@@ -37,6 +39,7 @@ const SectionComponentTemplate = ({
     } else if (columnsCount === '2') {
         return (
             <TwoColumnSection
+                id={id}
                 className={className}
                 ref={ref}
                 header={header}
@@ -50,6 +53,7 @@ const SectionComponentTemplate = ({
     } else if (columnsCount === '3') {
         return (
             <ThreeColumnSection
+                id={id}
                 ref={ref}
                 headerDecoration={headerDecoration}
                 className={className}

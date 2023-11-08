@@ -11,12 +11,14 @@ const SingleColumnSection = ({
     className,
     headerDecoration,
     ref,
+    id,
 }) => {
     return (
         <section
             ref={ref}
             style={{ backgroundImage: { backgroundImage } }}
             className={className}
+            id={id}
         >
             <Container>
                 <Row>

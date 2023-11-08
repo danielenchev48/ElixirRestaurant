@@ -13,11 +13,19 @@ const Navigation = () => {
     const [showProfileInfo, setShowProfileInfo] = useState(false);
     const [showUserIcon, setShowUserIcon] = useState(true);
 
+    function topFunction() {
+        document.documentElement.scrollTop = 0;
+        window.scrollTo({
+            top: 0,
+            behavior: 'instant'
+        })
+    }
+
     return (
         <nav>
             <div className="nav-wrapper">
-                <Link to="/ElixirRestaurant">
-                    <img src={logo} alt="Elixir logo" />
+                <Link to="/ElixirRestaurant/">
+                    <img src={logo} alt="Elixir logo" onClick={topFunction} />
                 </Link>
                 <div
                     className={showMobileMenu ? 'show-mobile-menu' : 'nav-menu'}
@@ -31,6 +39,7 @@ const Navigation = () => {
                                 className={({ isActive }) =>
                                     isActive ? 'active' : undefined
                                 }
+                                onClick={topFunction}
                             >
                                 {element.name}
                             </NavLink>

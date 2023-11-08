@@ -10,10 +10,11 @@ const TwoColumnSection = ({
     sliderComponent,
     className,
     ref,
+    id,
 }) => {
     if (imagePosition === 'left') {
         return (
-            <section ref={ref} className={className}>
+            <section ref={ref} className={className} id={id}>
                 <Container>
                     <Row>
                         <Col>
@@ -33,7 +34,7 @@ const TwoColumnSection = ({
         );
     } else if (imagePosition === 'right') {
         return (
-            <section ref={ref} className={className}>
+            <section ref={ref} className={className} id={id}>
                 <Container>
                     <Row>
                         <Col>
