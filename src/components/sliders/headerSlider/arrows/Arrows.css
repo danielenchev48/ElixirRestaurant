@@ -5,11 +5,11 @@
 }
 
 .slick-prev {
-    left: 1%;
+    left: 5px !important;
 }
 
 .slick-next {
-    right: 1%;
+    right: 60px !important;
 }
 
 .slick-prev::before {

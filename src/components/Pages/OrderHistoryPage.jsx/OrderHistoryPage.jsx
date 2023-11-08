@@ -6,29 +6,30 @@ import { Button } from 'react-bootstrap';
 import rightSideImage from '../../../assets/images/menu_right.jpg';
 import leftSideImage from '../../../assets/images/menu_left.jpg';
 import axios from 'axios';
+import orderHistoryData from './orderHistoryData';
 
 const OrderHistoryPage = () => {
-    const [orderHistory, setOrderHistory] = useState(null);
+    const [orderHistory, setOrderHistory] = useState(orderHistoryData || {});
     const [showAllItems, setShowAllItems] = useState(false);
     const [isModalOpened, setIsModalOpened] = useState(false);
 
 
 
-    useEffect(() => {
-        axios
-            .get('http://localhost:3000/api/v1/orders')
-            .then((res) => {
-                if (res.status === 200) {
-                    return res.data;
-                } else {
-                    throw new Error(`Request failed with status ${res.status}`);
-                }
-            })
-            .then((data) => setOrderHistory(data))
-            .catch((error) => {
-                console.error('Error fetching order history:', error);
-            });
-    }, []);
+    // useEffect(() => {
+    //     axios
+    //         .get('http://localhost:3000/api/v1/orders')
+    //         .then((res) => {
+    //             if (res.status === 200) {
+    //                 return res.data;
+    //             } else {
+    //                 throw new Error(`Request failed with status ${res.status}`);
+    //             }
+    //         })
+    //         .then((data) => setOrderHistory(data))
+    //         .catch((error) => {
+    //             console.error('Error fetching order history:', error);
+    //         });
+    // }, []);
 
     return (
         orderHistory && (

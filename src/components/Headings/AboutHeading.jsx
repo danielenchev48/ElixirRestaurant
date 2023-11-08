@@ -1,6 +1,7 @@
 import React from 'react';
 import MyDynamicTag from './HeadingTemplate';
 import styles from './SingleHeadingGenerator.module.scss';
+import headerDecorator from '../../assets/images/header_decorator.png'
 
 const headings = {
     type: 'h3',
@@ -10,8 +11,8 @@ const headings = {
     className: 'headerDecorator',
     subheading: '',
     subcontent: '',
-    imageBeforeSRC: 'src/assets/images/header_decorator.png',
-    imageAfterSRC: 'src/assets/images/header_decorator.png',
+    imageBeforeSRC: headerDecorator,
+    imageAfterSRC: headerDecorator,
     id: 3,
 };
 

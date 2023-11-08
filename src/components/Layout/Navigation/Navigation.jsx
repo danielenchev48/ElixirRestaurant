@@ -16,7 +16,7 @@ const Navigation = () => {
     return (
         <nav>
             <div className="nav-wrapper">
-                <Link to="/">
+                <Link to="/ElixirRestaurant">
                     <img src={logo} alt="Elixir logo" />
                 </Link>
                 <div

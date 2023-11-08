@@ -12,6 +12,7 @@ import './UserStyles.scss';
 import 'animate.css';
 import { useNavigate } from 'react-router-dom';
 import Cookies from 'js-cookie';
+import userIcon from '../../../assets/images/user.png'
 
 export const UserContext = createContext();
 
@@ -44,12 +45,13 @@ const UserInfoDropdown = ({ show, setShow }) => {
             ref={userInfoRef}
         >
             <div className="user-img">
-                <img src="../../src/assets/images/user.png" alt="user-image" />
+                <img src={userIcon} alt="user-image" />
             </div>
             <h4 className="animate__animated animate__heartBeat">
                 {userData.id ? `Welcome, ${userData.userName || 'User'}!` : 'Welcome!'}
             </h4>
-            {userData.id ? (
+            {
+                // userData.id ? (
                 <>
                     <div className="gadgets">
                         <div className="orderHistory-btn">
@@ -58,7 +60,7 @@ const UserInfoDropdown = ({ show, setShow }) => {
                                 onMouseEnter={() => setIsHovered(true)}
                                 onMouseLeave={() => setIsHovered(false)}
                                 onClick={() => {
-                                    navigate('/account/orders');
+                                    navigate('/ElixirRestaurant/account/orders');
                                     setShow(false);
                                 }}
                             />
@@ -78,25 +80,27 @@ const UserInfoDropdown = ({ show, setShow }) => {
                         >
                             <Login />
                         </UserContext.Provider>
-                        <div className='accountSettings' onClick={() => navigate('/account')}>Edit</div>
+                        <div className='accountSettings' onClick={() => navigate('/ElixirRestaurant/account')}>Edit</div>
                     </div>
 
                 </>
 
-            ) : <div className="icons">
-                <UserContext.Provider
-                    value={{
-                        showLogin,
-                        setShowLogin,
-                        showPass,
-                        setShowPass,
-                        showRegister,
-                        setShowRegister,
-                    }}
-                >
-                    <Login />
-                </UserContext.Provider>
-            </div>}
+                // ) 
+                // : <div className="icons">
+                //     <UserContext.Provider
+                //         value={{
+                //             showLogin,
+                //             setShowLogin,
+                //             showPass,
+                //             setShowPass,
+                //             showRegister,
+                //             setShowRegister,
+                //         }}
+                //     >
+                //         <Login />
+                //     </UserContext.Provider>
+                // </div>
+            }
 
         </div>
     );

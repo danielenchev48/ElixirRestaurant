@@ -1,4 +1,8 @@
 import MyDynamicTag from '../../../components/Headings/HeadingTemplate';
+import Separator from '../../../assets/images/slide-separator.png'
+import SeparatorOrange from '../../../assets/images/slide-separator_orange.png'
+import SeparatorGreen from '../../../assets/images/slide-separator_green.png'
+import SeparatorYellow from '../../../assets/images/slide-separator_yellow.png'
 
 const GalleryHeading = () => {
     const headings = {
@@ -8,8 +12,8 @@ const GalleryHeading = () => {
         className: 'headerDecorator',
         subheading: 'h5',
         subcontent: 'A Visual Feast of Authentic Italian Pizzas',
-        imageBeforeSRC: 'src/assets/images/slide-separator.png',
-        imageAfterSRC: 'src/assets/images/slide-separator.png',
+        imageBeforeSRC: Separator,
+        imageAfterSRC: Separator,
         id: 4,
     };
 
@@ -24,8 +28,8 @@ const RestaurantHeading = () => {
         className: 'headerDecorator',
         subheading: 'h5',
         subcontent: '',
-        imageBeforeSRC: 'src/assets/img/slide-separator_orange.png',
-        imageAfterSRC: 'src/assets/img/slide-separator_orange.png',
+        imageBeforeSRC: SeparatorOrange,
+        imageAfterSRC: SeparatorOrange,
         id: 4,
     };
 
@@ -40,8 +44,8 @@ const InteriorHeading = () => {
         className: 'headerDecorator',
         subheading: 'h5',
         subcontent: '',
-        imageBeforeSRC: 'src/assets/img/slide-separator_orange.png',
-        imageAfterSRC: 'src/assets/img/slide-separator_orange.png',
+        imageBeforeSRC: SeparatorOrange,
+        imageAfterSRC: SeparatorOrange,
         id: 4,
     };
 
@@ -56,8 +60,8 @@ const PizzasHeading = () => {
         className: 'headerDecorator',
         subheading: 'h5',
         subcontent: '',
-        imageBeforeSRC: 'src/assets/img/slide-separator_orange.png',
-        imageAfterSRC: 'src/assets/img/slide-separator_orange.png',
+        imageBeforeSRC: SeparatorOrange,
+        imageAfterSRC: SeparatorOrange,
         id: 4,
     };
 
@@ -72,8 +76,8 @@ const SaladsHeading = () => {
         className: 'headerDecorator',
         subheading: 'h5',
         subcontent: '',
-        imageBeforeSRC: 'src/assets/img/slide-separator_green.png',
-        imageAfterSRC: 'src/assets/img/slide-separator_green.png',
+        imageBeforeSRC: SeparatorGreen,
+        imageAfterSRC: SeparatorGreen,
         id: 4,
     };
 
@@ -88,8 +92,8 @@ const DessertsHeading = () => {
         className: 'headerDecorator',
         subheading: 'h5',
         subcontent: '',
-        imageBeforeSRC: 'src/assets/img/slide-separator_yellow.png',
-        imageAfterSRC: 'src/assets/img/slide-separator_yellow.png',
+        imageBeforeSRC: SeparatorYellow,
+        imageAfterSRC: SeparatorYellow,
         id: 4,
     };
 

@@ -22,7 +22,7 @@ const routes = {
         path: '/ElixirRestaurant',
         element: <HomePage />,
         name: 'home',
-        includeInNav: true,
+        includeInNav: false,
     },
     about: {
         path: '/ElixirRestaurant/about',

@@ -1,3 +1,12 @@
+import pizza from '../../../assets/images/menu-items/italian-pizza.jpg'
+import ceaserSal from '../../../assets/images/menu-items/cesar-salad.jpg'
+import itSalad from '../../../assets/images/menu-items/italian-salad.jpg'
+import caesar from '../../../assets/images/menu-items/caesar.jpg'
+import bbq from '../../../assets/images/menu-items/bbq.jpg'
+import swiss from '../../../assets/images/menu-items/swiss.jpg'
+import cheesecake from '../../../assets/images/menu-items/cheesecake.png'
+import cremeBrulee from '../../../assets/images/menu-items/creme-brulee.png'
+
 const orderHistoryData = [
     {
         id: 1,
@@ -10,7 +19,7 @@ const orderHistoryData = [
         ],
         date: '11.09.2023',
         orderAddress: 'Mladost 49, Varna, Bulgaria',
-        img: ['../../../src/assets/images/menu-items/italian-pizza.jpg'],
+        image: [pizza],
     },
     {
         id: 2,
@@ -28,9 +37,9 @@ const orderHistoryData = [
         ],
         date: '15.08.2023',
         orderAddress: 'str.Andrei Saharov 19, Varna, Bulgaria',
-        img: [
-            '../../../src/assets/images/menu-items/cesar-salad.jpg',
-            '../../../src/assets/images/menu-items/italian-salad.jpg',
+        image: [
+            ceaserSal,
+            itSalad,
         ],
     },
     {
@@ -49,9 +58,9 @@ const orderHistoryData = [
         ],
         date: '26.07.2023',
         orderAddress: 'str.Andrei Saharov 19, Varna, Bulgaria',
-        img: [
-            '../../../src/assets/images/menu-items/caesar.jpg',
-            '../../../src/assets/images/menu-items/bbq.jpg',
+        image: [
+            caesar,
+            bbq,
         ],
     },
     {
@@ -65,7 +74,7 @@ const orderHistoryData = [
         ],
         date: '04.07.2023',
         orderAddress: 'str.Andrei Saharov 19, Varna, Bulgaria',
-        img: ['../../../src/assets/images/menu-items/swiss.jpg'],
+        image: [swiss],
     },
     {
         id: 5,
@@ -83,9 +92,9 @@ const orderHistoryData = [
         ],
         date: '15.06.2023',
         orderAddress: 'str.Andrei Saharov 19, Varna, Bulgaria',
-        img: [
-            '../../../src/assets/images/menu-items/cheesecake.png',
-            '../../../src/assets/images/menu-items/creme-brulee.png',
+        image: [
+            cheesecake,
+            cremeBrulee,
         ],
     },
 ];

@@ -5,6 +5,7 @@ import { faPenToSquare } from '@fortawesome/free-solid-svg-icons';
 import axios from 'axios';
 import Cookies from 'js-cookie';
 import { useEffect, useState } from 'react';
+import userIcon from '../../../../assets/images/user.png'
 
 function AccountOverview() {
     const [user, setUser] = useState({
@@ -14,18 +15,18 @@ function AccountOverview() {
         country: '',
     });
 
-    useEffect(() => {
-        const userData = Cookies.get('userData')
-            ? JSON.parse(Cookies.get('userData'))
-            : {};
-        axios
-            .get(
-                `http://localhost:3000/api/v1/user/userProfile/findUser/${userData.id}`,
-            )
-            .then((user) => {
-                setUser(user.data.user);
-            });
-    }, []);
+    // useEffect(() => {
+    //     const userData = Cookies.get('userData')
+    //         ? JSON.parse(Cookies.get('userData'))
+    //         : {};
+    //     axios
+    //         .get(
+    //             `http://localhost:3000/api/v1/user/userProfile/findUser/${userData.id}`,
+    //         )
+    //         .then((user) => {
+    //             setUser(user.data.user);
+    //         });
+    // }, []);
 
     function Overview() {
         return (
@@ -33,7 +34,7 @@ function AccountOverview() {
                 <div className="detailsContainer col-md-10">
                     <div className="profilePicture">
                         <img
-                            src="src/assets/images/user.png"
+                            src={userIcon}
                             alt="userProfile"
                         />
                         <div className="changeWallpaper">
@@ -54,7 +55,8 @@ function AccountOverview() {
                                         class="form-control"
                                         id="inputFirstName"
                                         type="text"
-                                        defaultValue={user.userName}
+                                        // defaultValue={user.userName}
+                                        defaultValue={'John'}
                                     />
                                 </div>
                                 <div class="col-md-6">
@@ -68,7 +70,7 @@ function AccountOverview() {
                                         class="form-control"
                                         id="inputLastName"
                                         type="text"
-                                        defaultValue=""
+                                        defaultValue="Doe"
                                     />
                                 </div>
                             </div>
@@ -84,7 +86,8 @@ function AccountOverview() {
                                         class="form-control"
                                         id="inputCountry"
                                         type="text"
-                                        defaultValue={user.country}
+                                        // defaultValue={user.country}
+                                        defaultValue={'Bulgaria'}
                                     />
                                 </div>
                                 <div class="col-md-6">
@@ -95,7 +98,7 @@ function AccountOverview() {
                                         class="form-control"
                                         id="inputStreet"
                                         type="text"
-                                        defaultValue=""
+                                        defaultValue="New Street 16"
                                     />
                                 </div>
                             </div>
@@ -110,7 +113,8 @@ function AccountOverview() {
                                     class="form-control"
                                     id="inputEmailAddress"
                                     type="email"
-                                    defaultValue={user.email}
+                                    // defaultValue={user.email}
+                                    defaultValue={'testmail@yahoo.com'}
                                 />
                             </div>
                             <div class="row gx-3 mb-3">
@@ -122,7 +126,8 @@ function AccountOverview() {
                                         class="form-control"
                                         id="inputPhone"
                                         type="tel"
-                                        defaultValue={user.phoneNumber}
+                                        // defaultValue={user.phoneNumber}
+                                        defaultValue={'099157777'}
                                     />
                                 </div>
                                 <div class="col-md-6">
@@ -137,7 +142,7 @@ function AccountOverview() {
                                         id="inputBirthday"
                                         type="text"
                                         name="birthday"
-                                        defaultValue=""
+                                        defaultValue="14.02.1995"
                                     />
                                 </div>
                             </div>

@@ -6,6 +6,9 @@ import { LocationContext } from './LocationTracker';
 import { Button, ProgressBar } from 'react-bootstrap';
 import Collapse from 'react-bootstrap/Collapse';
 import TimerHeading from './TimerHeading';
+import deliveryCarI from '../../assets/images/deliverycar.png'
+import homeI from '../../assets/images/home2.png'
+import restaurantI from '../../assets/images/pizzaria.png'
 
 const Map = ({ centerCoordinates }) => {
     const deliveryLocationRef = useRef(centerCoordinates);
@@ -20,19 +23,19 @@ const Map = ({ centerCoordinates }) => {
     const mapboxStyleId = 'nikolla200/clmix079w00a701qt5hl646ds';
 
     const deliveryCarIcon = new L.icon({
-        iconUrl: 'src/assets/images/deliverycar.png',
+        iconUrl: deliveryCarI,
         iconSize: [60, 60],
         iconAnchor: [16, 16],
     });
 
     const homeIcon = new L.icon({
-        iconUrl: 'src/assets/images/home2.png',
+        iconUrl: homeI,
         iconSize: [60, 60],
         iconAnchor: [16, 16],
     });
 
     const restaurantIcon = new L.icon({
-        iconUrl: 'src/assets/images/pizzaria.png',
+        iconUrl: restaurantI,
         iconSize: [60, 60],
         iconAnchor: [16, 16],
     });

@@ -1,7 +1,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import SlickSlider from '../../../assets/slickSlider/SlickSlider';
 import styles from './TestimonialsSlider.module.scss';
-import { faBars, faQuoteRight } from '@fortawesome/free-solid-svg-icons';
+import { faQuoteRight } from '@fortawesome/free-solid-svg-icons';
+import testimonialsLogo from '../../../assets/images/testimonials_logo.png'
 
 const settings = {
     infinite: true,
@@ -59,7 +60,7 @@ function TestimonialsSlider() {
                 <div className={styles.message}>
                     <div className={styles.header}>
                         <img
-                            src="src/assets/img/testimonials_logo.png"
+                            src={testimonialsLogo}
                             alt="testimonials_logo"
                         />
                         <h2>TESTIMONIALS</h2>

@@ -3,6 +3,13 @@ import SlickSlider from '../../../assets/slickSlider/SlickSlider';
 import { PrevArrow, NextArrow } from './arrows/Arrows';
 import styles from './HeaderSlider.module.scss';
 import { CSSTransition } from 'react-transition-group';
+import React from 'react';
+import header1 from '../../../assets/images/header_slider01.jpg'
+import header2 from '../../../assets/images/header_slider02.jpg'
+import header3 from '../../../assets/images/header_slider03.jpg'
+import separator from '../../../assets/images/slide-separator.png'
+import downArrow from '../../../assets/images/down-arrow.png'
+import logoIntro from '../../../assets/images/logo_intro_red.png'
 
 const settings = {
     infinite: true,
@@ -27,17 +34,17 @@ const settings = {
 const sliders = [
     {
         type: 'image',
-        src: 'src/assets/img/header_slider01.jpg',
+        src: header1,
         text: 'ITALIAN STYLE RESTAURANT',
     },
     {
         type: 'image',
-        src: 'src/assets/img/header_slider02.jpg',
+        src: header2,
         text: 'WELCOME TO RESTAURANT',
     },
     {
         type: 'image',
-        src: 'src/assets/img/header_slider03.jpg',
+        src: header3,
         text: 'ELIXIR EXLUSIVELY FOOD',
     },
 ];
@@ -77,7 +84,7 @@ function HeaderSlider() {
 
                 <div className={styles.SliderWrapper}>
                     <img
-                        src="src/assets/img/logo_intro_red.png"
+                        src={logoIntro}
                         className={styles.sliderLogo}
                         alt="elixirLogo"
                     />
@@ -104,7 +111,7 @@ function HeaderSlider() {
                     </div>
 
                     <img
-                        src="src/assets/img/slide-separator.png"
+                        src={separator}
                         className={styles.sliderSeparator}
                         alt="sliderSeparator"
                     />
@@ -113,7 +120,7 @@ function HeaderSlider() {
                     </p>
 
                     <button className={styles.downArrow}>
-                        <img src="src/assets/img/down-arrow.png" alt="arrow" />
+                        <img src={downArrow} alt="arrow" />
                     </button>
                 </div>
             </div>

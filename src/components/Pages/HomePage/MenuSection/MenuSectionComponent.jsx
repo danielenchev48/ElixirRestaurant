@@ -9,14 +9,14 @@ import useLazyLoad from '../../../../Hooks/useLazyLoad/useLazyLoad';
 
 const MenuSectionComponent = () => {
     const targetRef = useRef(null);
-    const isVisible = useLazyLoad(
-        {
-            root: null,
-            rootMargin: '10px',
-            threshold: 0.5,
-        },
-        targetRef,
-    );
+    // const isVisible = useLazyLoad(
+    //     {
+    //         root: null,
+    //         rootMargin: '10px',
+    //         threshold: 0.5,
+    //     },
+    //     targetRef,
+    // );
     return (
         <SectionComponentTemplate
             className="menu-section-wrapper"
@@ -25,12 +25,12 @@ const MenuSectionComponent = () => {
             threeColumnArray={menuSectionTextContent}
         >
             <img
-                className={!isVisible ? 'invisible' : 'left-side-img'}
+                className='left-side-img'
                 src={leftSideImage}
                 alt="pizza"
             />
             <img
-                className={!isVisible ? 'invisible' : 'right-side-img'}
+                className='right-side-img'
                 src={rightSideImage}
                 alt="pasta"
                 ref={targetRef}

@@ -1,4 +1,5 @@
 import MyDynamicTag from '../../../components/Headings/HeadingTemplate';
+import headerDecorator from '../../assets/images/header_decorator_dark.png'
 
 const ContactHeading = () => {
     const headings = {
@@ -8,8 +9,8 @@ const ContactHeading = () => {
         className: 'headerDecorator',
         subheading: 'h6',
         subcontent: 'W325 State Road 123 Mondovi, W1 (Wisconsins) 98746-54321',
-        imageBeforeSRC: 'src/assets/images/header_decorator_dark.png',
-        imageAfterSRC: 'src/assets/images/header_decorator_dark.png',
+        imageBeforeSRC: headerDecorator,
+        imageAfterSRC: headerDecorator,
         id: 4,
     };
 

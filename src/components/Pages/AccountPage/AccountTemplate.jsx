@@ -15,10 +15,10 @@ function AccountTemplate(props) {
                     <div className="profileNav">
                         <div className="path">
                             <span>
-                                <a href="http://localhost:5173/">Home</a>
+                                <a href="/ElixirRestaurant">Home</a>
                             </span>
                             <span>
-                                <a href="http://localhost:5173/account">
+                                <a href="/ElixirRestaurant/account">
                                     Account
                                 </a>
                             </span>
@@ -29,17 +29,17 @@ function AccountTemplate(props) {
                     </div>
                     <div className="sections row">
                         <div className="accountPages col-xl-3">
-                            <a href="http://localhost:5173/account">
+                            <a href="/ElixirRestaurant/account">
                                 <div className="singlePage" id="overview">
                                     Overview
                                 </div>
                             </a>
-                            <a href="http://localhost:5173/account/orders">
+                            <a href="/ElixirRestaurant/account/orders">
                                 <div className="singlePage" id="orders">
                                     Order History
                                 </div>
                             </a>
-                            <a href="http://localhost:5173/account/changePassword">
+                            <a href="/ElixirRestaurant/account/changePassword">
                                 <div
                                     className="singlePage"
                                     id="change password"

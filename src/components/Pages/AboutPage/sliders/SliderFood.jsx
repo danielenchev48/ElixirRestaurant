@@ -1,5 +1,8 @@
 import SlickSlider from '../../../../assets/slickSlider/SlickSlider';
 import './SliderFood.scss';
+import about01 from '../../../../assets/images/about01.jpg'
+import about02 from '../../../../assets/images/about02.jpg'
+import about03 from '../../../../assets/images/about03.jpg'
 
 function SliderFood() {
     const settings = {
@@ -16,9 +19,9 @@ function SliderFood() {
     };
 
     const sliders = [
-        { type: 'image', src: 'src/assets/img/about01.jpg' },
-        { type: 'image', src: 'src/assets/img/about02.jpg' },
-        { type: 'image', src: 'src/assets/img/about03.jpg' },
+        { type: 'image', src: about01 },
+        { type: 'image', src: about02 },
+        { type: 'image', src: about03 },
     ];
 
     return (

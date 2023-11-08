@@ -1,7 +1,7 @@
 import React from 'react';
 import './ErrorPage.scss';
 
-import errorPizzaImage from '../../../assets/img/pizza-error-1.png';
+import errorPizzaImage from '../../../assets/images/pizza-error-1.png';
 
 const ErrorPage = () => {
     return (

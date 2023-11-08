@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMessage } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
 import Chat from '../components/ChatBot/ChatBot';
+import Footer from '../components/Layout/Footer/Footer';
 
 const RootLayout = () => {
     const navigation = useNavigation();
@@ -28,6 +29,7 @@ const RootLayout = () => {
                     </div>
                 )}
                 {showChat && <Chat show={showChat} setShow={setShowChat} />}
+                <Footer />
             </main>
         </>
     );
