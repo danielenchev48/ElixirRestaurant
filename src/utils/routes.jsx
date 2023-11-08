@@ -75,8 +75,8 @@ const routes = {
     takeAway: {
         path: '/ElixirRestaurant/takeAway',
         element: <TakeawayPage />,
-        name: 'takeAway',
-        includeInNav: false,
+        name: '/takeAway/',
+        includeInNav: true,
     },
     accountOverview: {
         path: '/ElixirRestaurant/account',

@@ -94,12 +94,12 @@ const TakeawayPage = () => {
 
     const totalOrderPrice = orderData
         ? orderData.items
-              .reduce(
-                  (total, item) =>
-                      total + parseFloat(item.price) * item.quantity,
-                  0,
-              )
-              .toFixed(2)
+            .reduce(
+                (total, item) =>
+                    total + parseFloat(item.price) * item.quantity,
+                0,
+            )
+            .toFixed(2)
         : '0.00';
 
     return (
@@ -110,13 +110,12 @@ const TakeawayPage = () => {
                 <ProgressBar status={orderStatus} />
                 <div className="pizza-img">
                     <img
-                        src={`../../../src/assets/images/takeaway-page-images/${
-                            orderStatus === 'Waiting for confirmation'
-                                ? 'waiting.png'
-                                : orderStatus === 'Preparing'
+                        src={`../../../src/assets/images/takeaway-page-images/${orderStatus === 'Waiting for confirmation'
+                            ? 'waiting.png'
+                            : orderStatus === 'Preparing'
                                 ? 'preparing2.webp'
                                 : 'ready.png'
-                        }`}
+                            }`}
                         alt="Pizza"
                     />
                 </div>
@@ -146,7 +145,7 @@ const TakeawayPage = () => {
                 <Button
                     className="back-menu-btn mt-10"
                     variant="dark"
-                    onClick={() => navigate('/menu')}
+                    onClick={() => navigate('/ElixirRestaurant/orders')}
                 >
                     Back to the Menu
                 </Button>
