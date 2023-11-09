@@ -7,6 +7,7 @@ function CheckoutOption() {
         <div className="payment">
             <div className="options">
                 <div className="method">
+                    <h2>Options</h2>
                     <div className="cashOption option">
                         <input
                             type="radio"
@@ -33,36 +34,6 @@ function CheckoutOption() {
                         <label htmlFor="card">
                             <FontAwesomeIcon icon={faWallet} className="icon" />
                             Credit card
-                        </label>
-                    </div>
-                </div>
-                <div className="method delivery-option">
-                    <div className="deliveryOption option">
-                        <input
-                            type="radio"
-                            id="takeaway"
-                            name="deliveryOpt"
-                            value=""
-                        />
-                        <label htmlFor="takeaway">
-                            <FontAwesomeIcon
-                                icon={faCreditCard}
-                                className="icon"
-                            />
-                            Take From Restaurant
-                        </label>
-                    </div>
-                    <div className="deliveryOption option">
-                        <input
-                            type="radio"
-                            id="home"
-                            name="deliveryOpt"
-                            value=""
-                            defaultChecked
-                        />
-                        <label htmlFor="home">
-                            <FontAwesomeIcon icon={faWallet} className="icon" />
-                            Order to Home
                         </label>
                     </div>
                 </div>

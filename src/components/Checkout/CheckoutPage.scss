@@ -8,5 +8,13 @@
         margin-bottom: 50px;
         margin: 0 auto;
         width: 80%;
+
+        @media screen and (max-width:900px) {
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+            width: 90%;
+        }
+
     }
 }
