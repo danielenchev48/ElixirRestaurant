@@ -56,7 +56,7 @@
         }
 
         .ordersList {
-            max-height: 55vh;
+            max-height: 35vh;
             overflow-y: auto;
             width: 360px;
 
@@ -157,6 +157,8 @@
     .fixed {
         position: fixed;
         top: 10%;
+        // max-height: 80%;
+        bottom: 10%;
 
         @media screen and (max-width: 1000px) {
             position: relative;

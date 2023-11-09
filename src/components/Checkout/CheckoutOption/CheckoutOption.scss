@@ -5,6 +5,8 @@
     min-width: 320px;
     height: 100%;
     padding: 20px 0;
+    background-color: rgba(255, 255, 255, 0.856);
+
 
     .options {
         display: flex;
@@ -46,11 +48,11 @@
                     display: none;
                 }
 
-                input:checked ~ .icon {
+                input:checked~.icon {
                     color: darkred;
                 }
 
-                input:checked ~ ::before {
+                input:checked~ ::before {
                     background-color: darkred;
                 }
 

@@ -35,8 +35,8 @@ const YourOrdersSections = () => {
     function removeProduct(product) {
         const itemInCart = localStorage.getItem('cart')
             ? JSON.parse(localStorage.getItem('cart')).filter(
-                  (item) => item.id === product.id,
-              )
+                (item) => item.id === product.id,
+            )
             : null;
         const productIndex = JSON.parse(localStorage.getItem('cart')).findIndex(
             (element) => element.id === product.id,
@@ -59,8 +59,8 @@ const YourOrdersSections = () => {
     function addProduct(product) {
         const itemInCart = localStorage.getItem('cart')
             ? JSON.parse(localStorage.getItem('cart')).filter(
-                  (item) => item.id === product.id,
-              )
+                (item) => item.id === product.id,
+            )
             : null;
         const productIndex = JSON.parse(localStorage.getItem('cart')).findIndex(
             (element) => element.id === product.id,
@@ -74,10 +74,10 @@ const YourOrdersSections = () => {
 
     const price = localStorage.getItem('cart')
         ? JSON.parse(localStorage.getItem('cart'))
-              .reduce((prev, next) => {
-                  return prev + parseFloat(next.price) * next.quantity;
-              }, 0)
-              .toFixed(2)
+            .reduce((prev, next) => {
+                return prev + parseFloat(next.price) * next.quantity;
+            }, 0)
+            .toFixed(2)
         : 0;
 
     const delivery = 3.0;
@@ -85,7 +85,7 @@ const YourOrdersSections = () => {
     const totalPrice = parseFloat(price) + parseFloat(delivery);
 
     function confirmButton() {
-        location.href = 'http://localhost:5173/checkout';
+        location.href = '/ElixirRestaurant/checkout';
     }
 
     function closeMobileMenu() {

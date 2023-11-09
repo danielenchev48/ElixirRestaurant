@@ -8,11 +8,14 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import './OrdersSection.scss';
 import YourOrdersSections from '../YourOrdersSection/YourOrdersSection';
+import FEorders from './OrdersFEdata';
 
 const OrdersSection = () => {
     const [products, setProducts] = useState([]);
     const [prices, setPrices] = useState([]);
     const [loaded, setLoaded] = useState(false);
+    const [feDataBool, setFeDataBool] = useState(false)
+    const [feData, setFeData] = useState(FEorders)
 
     useEffect(() => {
         fetch('http://localhost:3000/api/v1/products/all')
@@ -21,7 +24,11 @@ const OrdersSection = () => {
             })
             .then((data) => {
                 setProducts(data.products.data);
-            });
+            })
+            .catch((error) => {
+                console.log(error)
+                setFeDataBool(true)
+            })
     }, []);
     useEffect(() => {
         fetch('http://localhost:3000/api/v1/products/prices')
@@ -37,8 +44,8 @@ const OrdersSection = () => {
     function addToLocal(product, price) {
         const itemInCart = localStorage.getItem('cart')
             ? JSON.parse(localStorage.getItem('cart')).filter(
-                  (item) => item.id === product.id,
-              )
+                (item) => item.id === product.id,
+            )
             : null;
         const isItemInCart = itemInCart ? !!itemInCart.length : null;
         product.price = price;
@@ -103,9 +110,38 @@ const OrdersSection = () => {
                             );
                         })
                         .reverse()
-                ) : (
-                    <p>loading</p>
-                )}
+                ) : null}
+                {feDataBool ? <div>Data loaded from FrontEnd test Database</div> : null}
+                {feDataBool ? (
+                    feData
+                        .map((product, index) => {
+                            // const price = prices[index].unit_amount;
+                            const newPrice = product.unit_amount
+                                .toString()
+                                .replace(/\B(?=(\d{2})+(?!\d))/g, '.');
+                            return (
+                                <div className="orderProduct">
+                                    <h2>{product.name}</h2>
+                                    <p className="description">
+                                        {product.description}
+                                    </p>
+                                    <p className="price">{newPrice}$</p>
+                                    <div
+                                        className="addButton"
+                                        onClick={() =>
+                                            addToLocal(product, newPrice)
+                                        }
+                                    >
+                                        <FontAwesomeIcon
+                                            icon={faPlus}
+                                            className="plus"
+                                        />
+                                    </div>
+                                </div>
+                            );
+                        })
+                        .reverse()
+                ) : null}
                 <div className="mobileButton" onClick={showMobileCheckout}>
                     <div>To Checkout</div>
                 </div>
