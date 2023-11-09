@@ -181,8 +181,8 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        // align-items: center;
         text-align: center;
+        align-items: center;
 
         @media screen and (max-width:1000px) {
             width: unset;
@@ -199,10 +199,15 @@
     }
 
     .gallery-item-center:nth-child(2) {
-        width: unset;
+        // width: 100%;
 
         div {
-            width: unset;
+            // width: unset;
+            // margin: 0 auto;
+        }
+
+        .view-more-btn {
+            left: 32%;
         }
     }
 
@@ -384,9 +389,11 @@
 }
 
 .galleryModal {
+
     .modal-dialog {
         .modal-content {
-            background-color: rgba(26, 11, 0, 0.37);
+            background-color: rgba(0, 0, 0, 0.589);
+            color: #fff;
 
             .modal-image-wrapper {
                 img {

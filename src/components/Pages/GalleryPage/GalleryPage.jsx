@@ -31,12 +31,12 @@ const GalleryPage = () => {
                     </Col>
                     <Col
                         lg={12}
-                        className="mt-5 gallery-item-center"
+                        className=" gallery-item-center"
                         lgOffset={3}
                     >
                         <GalleryItem productData={galleryData[0]} />
                     </Col>
-                    <Col lg={12} md={12} className="mb-5">
+                    <Col lg={12} md={12} className="">
                         <InteriorHeading />
                     </Col>
                     <Col lg={6} md={6} className="gallery-item-center">
@@ -48,7 +48,7 @@ const GalleryPage = () => {
                     {galleryData.map((product, index) => (
                         <React.Fragment key={index}>
                             {product.title && (
-                                <Col lg={12} className="mt-5 mb-5">
+                                <Col lg={12} className="mt-3 ">
                                     {product.title ===
                                         'Our Delicious Pizzas' ? (
                                         <PizzasHeading />

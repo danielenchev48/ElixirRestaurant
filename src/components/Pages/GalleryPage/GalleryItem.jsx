@@ -23,6 +23,7 @@ const GalleryItem = ({ productData }) => {
                     showModal ? setIsHovered(false) : setIsHovered(true)
                 }
                 onMouseLeave={() => setIsHovered(false)}
+                onClick={!showModal ? handleClick : null}
             >
                 <img src={productData.image} alt="Product image" />
                 {isHovered && (

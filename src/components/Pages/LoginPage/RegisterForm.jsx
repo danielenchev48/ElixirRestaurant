@@ -22,7 +22,7 @@ const RegisterFormUi = ({ handleClose, handleShowLogin }) => {
             name: 'email',
             type: 'email',
             placeholder: 'Email',
-            errorMessage: 'It should be a valid email address!',
+            // errorMessage: 'It should be a valid email address!',
             required: true,
         },
         {
@@ -30,8 +30,8 @@ const RegisterFormUi = ({ handleClose, handleShowLogin }) => {
             name: 'password',
             type: 'password',
             placeholder: 'Password',
-            errorMessage:
-                'Password should be 8-20 characters and include at least 1 letter, 1 number and 1 special character!',
+            // errorMessage:
+            // 'Password should be 8-20 characters and include at least 1 letter, 1 number and 1 special character!',
             pattern: `^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,20}$`,
             required: true,
         },
@@ -40,7 +40,7 @@ const RegisterFormUi = ({ handleClose, handleShowLogin }) => {
             name: 'confirmPassword',
             type: 'password',
             placeholder: 'Confirm Password',
-            errorMessage: "Passwords don't match!",
+            // errorMessage: "Passwords don't match!",
             pattern: values.password,
             required: true,
         },
@@ -56,7 +56,7 @@ const RegisterFormUi = ({ handleClose, handleShowLogin }) => {
             name: 'phoneNumber',
             type: 'text',
             placeholder: 'Phone Number',
-            errorMessage: 'Phone should be 10 numbers',
+            // errorMessage: 'Phone should be 10 numbers',
             pattern: `^0[0-9]{9}$`,
             required: true,
         },

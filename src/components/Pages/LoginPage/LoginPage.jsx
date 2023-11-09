@@ -75,12 +75,14 @@ function Login() {
                 onHide={handleCloseLogin}
                 backdrop="static"
                 keyboard={false}
+                className='login-wrapper'
             >
                 <LoginHeading />
                 <LoginUi
                     handleCloseLogin={handleCloseLogin}
                     handleShowReset={handleShowReset}
                     handleShow={handleShow}
+                    // className='login-wrapper'
                     setIsLoggedIn={setIsLoggedIn}
                 />
             </Modal>
@@ -89,6 +91,7 @@ function Login() {
                 show={showRegister}
                 onHide={handleClose}
                 backdrop="static"
+                className='login-wrapper register'
                 keyboard={false}
             >
                 <Register
@@ -101,6 +104,7 @@ function Login() {
                 show={showPass}
                 onHide={handleCloseReset}
                 backdrop="static"
+                className='login-wrapper password'
                 keyboard={false}
             >
                 <ResetPassword
