@@ -15,7 +15,7 @@ const GalleryItem = ({ productData }) => {
     };
 
     return (
-        <Col lg={4} md={5} sm={6} xs={12} className="mb-5">
+        <Col lg={4} md={5} sm={8} xs={12}>
             <div
                 className={`gallery-image-wrapper animate__animated animate__fadeIn 
         ${productData.productName === 'The Restaurant' && 'restaurant-img'}`}

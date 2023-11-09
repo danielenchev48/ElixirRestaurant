@@ -86,9 +86,22 @@
 
     .gallery-image-wrapper {
         width: 320px;
-        height: 270px;
+        height: 250px;
         border: 1px solid $primary-grey;
         position: relative;
+        // margin-bottom: 30px;
+        margin: 30px auto;
+        max-width: 320px;
+
+        @media screen and (max-width:1000px) {
+            width: unset;
+        }
+
+        @media screen and (max-width:400px) {
+            height: unset;
+            width: unset;
+            max-width: 320px;
+        }
 
         &::before {
             content: '';
@@ -167,7 +180,7 @@
     .gallery-item-center {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-end;
         // align-items: center;
         text-align: center;
 
@@ -177,12 +190,20 @@
 
         div {
             width: 320px;
+
+            @media screen and (max-width:400px) {
+                width: unset;
+            }
         }
 
     }
 
     .gallery-item-center:nth-child(2) {
         width: unset;
+
+        div {
+            width: unset;
+        }
     }
 
     .gallery-item-center:nth-child(4) {
@@ -190,13 +211,16 @@
 
         @media screen and (max-width:1000px) {
             flex-direction: column;
+
+
         }
     }
 
     .col-md-6:nth-child(5) {
-        width: 40%;
+        // width: 40%;
+        // width: unset;
 
-        @media screen and (max-width:764px) {
+        @media screen and (max-width:1000px) {
             display: flex;
             justify-content: center;
 
@@ -205,12 +229,20 @@
             }
         }
 
+        @media screen and (max-width:400px) {
+            width: unset;
+
+            div {
+                width: 100%;
+            }
+        }
+
     }
 
 
     .restaurant-img {
-        width: 500px;
-        height: 350px;
+        // width: 500px;
+        // height: 350px;
 
         .view-more-btn {
             left: 40%;
@@ -266,8 +298,8 @@
         }
 
         .restaurant-img {
-            width: 400px !important;
-            height: 350px !important;
+            // width: 400px !important;
+            // height: 350px !important;
             // margin-left: 100px !important;
         }
 
@@ -335,9 +367,9 @@
         }
 
         .restaurant-img {
-            width: 370px !important;
-            height: 300px !important;
-            margin-left: 60px !important;
+            max-width: 370px !important;
+            // height: 300px !important;
+            // margin-left: 60px !important;
         }
     }
 
