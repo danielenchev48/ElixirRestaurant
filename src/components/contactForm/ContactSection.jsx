@@ -27,9 +27,11 @@ const ContactSection = () => {
     ];
 
     return (
-        <section className="contact-section">
-            <ContactHeading />
-            <FormBuilder configurations={inputConfigurations} />
+        <section className="contact-section-wrapper">
+            <div className='contact-section'>
+                <ContactHeading />
+                <FormBuilder configurations={inputConfigurations} />
+            </div>
         </section>
     );
 };
