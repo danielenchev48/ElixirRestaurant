@@ -9,11 +9,9 @@ function Footer() {
                 <div className="row">
                     <div className="col-md-6 mt-md-0 mt-3 footerContent">
                         <h5 className="text-uppercase">Restaurant Website</h5>
-                        <p>Fully working responsive restaurant website written using React, Node and SASS, build with Vite, hosted on Github Pages (frontend only) with backend database, RESTful API requests,payment system, login system, shopping cart and more...</p>
+                        <p>Fully working responsive restaurant website written using React, Node and SASS, build with Vite, hosted on Github Pages (frontend only) with backend database, RESTful API requests, payment system, login system, shopping cart, simple chat robot and more...</p>
                     </div>
-
                     <hr className="clearfix w-100 d-md-none pb-0" />
-
                     <div className="col-md-3 mb-md-0 mb-3 techs">
                         <h5 className="text-uppercase">Technologies</h5>
                         <ul className="list-unstyled">
@@ -23,7 +21,6 @@ function Footer() {
                             <li><a href="https://react-bootstrap.netlify.app/">Bootstrap</a></li>
                         </ul>
                     </div>
-
                     <div className="col-md-3 mb-md-0 mb-3 env ">
                         <h5 className="text-uppercase">Environment</h5>
                         <ul className="list-unstyled envList">
