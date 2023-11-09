@@ -7,6 +7,17 @@
         padding-top: unset;
     }
 
+    a {
+        color: white;
+        text-decoration: none;
+        font-style: normal;
+        font-weight: bold;
+
+        &:hover {
+            border-bottom: solid 2px;
+            text-decoration: unset;
+        }
+    }
 
     h5 {
         font-size: 20px;
@@ -15,7 +26,6 @@
     .footer-copyright {
         background-color: rgba(24, 24, 24, 0.836);
         color: white;
-        // height: 200px;
     }
 
     .contentWrapper {
@@ -34,7 +44,6 @@
         }
 
         p {
-            // text-align: left;
             margin: 0 auto;
             font-size: 17px;
             width: 80%;
@@ -48,10 +57,6 @@
     .techs {
         text-align: left;
 
-        ul {
-            font-weight: bold;
-        }
-
         @media screen and (max-width: 768px) {
             text-align: unset;
         }
@@ -61,23 +66,11 @@
         text-align: left;
 
         .envList {
-            // display: flex;
-            // text-align: left;
             font-style: italic;
-
-            span {
-                font-weight: bold;
-                font-style: normal;
-
-            }
         }
 
         @media screen and (max-width: 768px) {
             text-align: unset;
         }
-
     }
-
-
-
 }
