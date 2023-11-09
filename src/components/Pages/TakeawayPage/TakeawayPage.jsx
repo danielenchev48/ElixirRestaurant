@@ -8,6 +8,9 @@ import { Button } from 'react-bootstrap';
 import RatingComponent from './RatingComponent';
 import { useNavigate } from 'react-router';
 import axios from 'axios';
+import waiting from '../../../assets/images/takeaway-page-images/waiting.png'
+import preparing2 from '../../../assets/images/takeaway-page-images/preparing2.webp'
+import ready from '../../../assets/images/takeaway-page-images/ready.png'
 
 const TakeawayPage = () => {
     const [orderStatus, setOrderStatus] = useState('Waiting for confirmation');
@@ -110,12 +113,7 @@ const TakeawayPage = () => {
                 <ProgressBar status={orderStatus} />
                 <div className="pizza-img">
                     <img
-                        src={`../../../src/assets/images/takeaway-page-images/${orderStatus === 'Waiting for confirmation'
-                            ? 'waiting.png'
-                            : orderStatus === 'Preparing'
-                                ? 'preparing2.webp'
-                                : 'ready.png'
-                            }`}
+                        src={orderStatus === 'Waiting for confirmation' ? waiting : orderStatus === 'Preparing' ? preparing2 : ready}
                         alt="Pizza"
                     />
                 </div>

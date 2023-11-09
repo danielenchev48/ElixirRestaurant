@@ -16,12 +16,17 @@ const YourOrdersSections = () => {
     const [cartProducts, setCartProducts] = useState(cartItems || []);
 
     addEventListener('scroll', () => {
+        console.log(scrollY)
         if (!document.querySelector('.yourOrders')) {
             return;
-        } else if (scrollY > 150) {
+        } else if (scrollY > 150 && scrollY < 1080) {
             document.querySelector('.yourOrders').classList.add('fixed');
+            document.querySelector('.yourOrders').classList.remove('atEnd');
         } else if (scrollY < 150) {
             document.querySelector('.yourOrders').classList.remove('fixed');
+        } else if (scrollY > 1080) {
+            document.querySelector('.yourOrders').classList.remove('fixed');
+            document.querySelector('.yourOrders').classList.add('atEnd');
         }
     });
 

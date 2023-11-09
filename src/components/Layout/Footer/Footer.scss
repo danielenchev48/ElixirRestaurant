@@ -1,4 +1,83 @@
-.footer-copyright {
-    background-color: rgb(70, 16, 0);
-    color: white;
+.footer {
+    background: url(../../../assets/images/background_footer.gif);
+    padding-top: 25px;
+    line-height: 30px;
+
+    @media screen and (max-width: 768px) {
+        padding-top: unset;
+    }
+
+
+    h5 {
+        font-size: 20px;
+    }
+
+    .footer-copyright {
+        background-color: rgba(24, 24, 24, 0.836);
+        color: white;
+        // height: 200px;
+    }
+
+    .contentWrapper {
+        color: white;
+    }
+
+    .footerContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+        margin-bottom: 20px;
+
+        h5 {
+            width: 80%;
+        }
+
+        p {
+            // text-align: left;
+            margin: 0 auto;
+            font-size: 17px;
+            width: 80%;
+        }
+
+        @media screen and (max-width: 768px) {
+            text-align: center;
+        }
+    }
+
+    .techs {
+        text-align: left;
+
+        ul {
+            font-weight: bold;
+        }
+
+        @media screen and (max-width: 768px) {
+            text-align: unset;
+        }
+    }
+
+    .env {
+        text-align: left;
+
+        .envList {
+            // display: flex;
+            // text-align: left;
+            font-style: italic;
+
+            span {
+                font-weight: bold;
+                font-style: normal;
+
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            text-align: unset;
+        }
+
+    }
+
+
+
 }
