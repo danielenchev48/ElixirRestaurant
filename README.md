@@ -7,8 +7,8 @@ Technologies used: ReactJS, ViteJS, NodeJS, JavaScript, Bootstrap, SASS, CSS, Mo
 
 Full Preview: https://danielenchev48.github.io/ElixirRestaurant/
 
-
 <h2 align='center'>Home</h2> 
+
 ![main](https://github.com/danielenchev48/ElixirRestaurant/assets/123250898/81998726-dc27-40dc-9110-eeb6bf81bec2)
 
 <h2 align='center'>Login</h2>
@@ -29,6 +29,7 @@ Full Preview: https://danielenchev48.github.io/ElixirRestaurant/
 
 
 <h2 align='center'>Track</h2> 
+
 ![track](https://github.com/danielenchev48/ElixirRestaurant/assets/123250898/9e312509-5487-4f48-916a-68d2938878bb)
 
 <h2 align='center'>History</h2>
