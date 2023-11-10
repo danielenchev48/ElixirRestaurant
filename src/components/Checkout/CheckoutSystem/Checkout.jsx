@@ -102,50 +102,50 @@ function Checkout() {
 
     async function handleCheckout(event) {
         event.preventDefault();
-        if (FormValidation()) {
-            const items = cart.map((item) => ({
-                product: item.name,
-                price: item.price,
-                quantity: item.quantity,
-            }));
+        // if (FormValidation()) {
+        const items = cart.map((item) => ({
+            product: item.name,
+            price: item.price,
+            quantity: item.quantity,
+        }));
 
-            const orderData = {
-                items,
-                date: new Date(Date.now() + 20 * 60 * 1000),
-                orderAddress: `${address.street}, ${address.city}, Bulgaria`,
-                image: getImagePaths(),
-                name: name.name,
-                orderNumber: Math.floor(Math.random() * 1000000),
-            };
+        const orderData = {
+            items,
+            date: new Date(Date.now() + 20 * 60 * 1000),
+            orderAddress: `${address.street}, ${address.city}, Bulgaria`,
+            image: getImagePaths(),
+            name: name.name,
+            orderNumber: Math.floor(Math.random() * 1000000),
+        };
 
-            try {
-                const response = await axios.post(
-                    'http://localhost:3000/api/v1/orders/addOrder',
-                    orderData,
-                );
-                console.log('Order created:', response.data);
+        try {
+            // const response = await axios.post(
+            //     'http://localhost:3000/api/v1/orders/addOrder',
+            //     orderData,
+            // );
+            // console.log('Order created:', response.data);
 
-                if (isTakeawayOptChosen === true) {
-                    const timer = localStorage.getItem('timer');
-                    window.open('/takeaway', '_blank');
-                    if (timer) {
-                        localStorage.removeItem('timer');
-                        localStorage.setItem('timer', 0);
-                    }
-                } else {
-                    const stripe = await GetStripe();
-                    const { error } = await stripe.redirectToCheckout({
-                        lineItems: lineItems,
-                        mode: 'payment',
-                        successUrl: `http://localhost:5173/location`,
-                        cancelUrl: `http://localhost:5173/`,
-                    });
-                }
-                console.log(orderData);
-            } catch (error) {
-                console.error('Error creating order:', error);
-            }
+            // if (isTakeawayOptChosen === true) {
+            //     const timer = localStorage.getItem('timer');
+            //     window.open('/takeaway', '_blank');
+            //     if (timer) {
+            //         localStorage.removeItem('timer');
+            //         localStorage.setItem('timer', 0);
+            //     }
+            // } else {
+            const stripe = await GetStripe();
+            const { error } = await stripe.redirectToCheckout({
+                lineItems: lineItems,
+                mode: 'payment',
+                successUrl: `http://localhost:5173/location`,
+                cancelUrl: `http://localhost:5173/`,
+            });
+            // }
+            // console.log(orderData);
+        } catch (error) {
+            console.error('Error creating order:', error);
         }
+
     }
 
     return (
