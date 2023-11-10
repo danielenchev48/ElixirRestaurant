@@ -5,7 +5,7 @@ Functionalities: backend database, RESTful API requests, payment system, login a
 
 Technologies used: ReactJS, ViteJS, NodeJS, JavaScript, Bootstrap, SASS, CSS, MongoDB, Postman, RESTFul api's, Axios, Stripe Checkout, GitHub pages/repositories.
 
-<h2>Full Preview: https://danielenchev48.github.io/ElixirRestaurant/</h2>
+<h2 align='center'>Full Preview: https://danielenchev48.github.io/ElixirRestaurant/</h2>
 
 <h2 align='center'>Home</h2> 
 
