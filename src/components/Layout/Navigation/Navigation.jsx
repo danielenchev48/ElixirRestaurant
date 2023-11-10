@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Navigation.scss';
 import logo from '../../../assets/images/logo_elixir.png';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 import routes from '../../../utils/routes';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
@@ -12,6 +12,7 @@ const Navigation = () => {
     const [showMobileMenu, setShowMobileMenu] = useState(false);
     const [showProfileInfo, setShowProfileInfo] = useState(false);
     const [showUserIcon, setShowUserIcon] = useState(true);
+    const location = useLocation()
 
     function topFunction() {
         document.documentElement.scrollTop = 0;
@@ -20,6 +21,11 @@ const Navigation = () => {
             behavior: 'instant'
         })
     }
+
+    useEffect(() => {
+        setShowMobileMenu(false)
+        setShowProfileInfo(false)
+    }, [location])
 
     return (
         <nav>

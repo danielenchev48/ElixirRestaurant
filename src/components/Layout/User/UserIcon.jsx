@@ -28,9 +28,7 @@ const UserIcon = ({
 
     return (
         <div
-            className={`icon-wrapper ${mobileIcon && 'mobile-user-icon'} ${
-                showMobileMenu ? 'remove' : ''
-            }`}
+            className={`icon-wrapper ${mobileIcon && 'mobile-user-icon'} ${showMobileMenu ? 'remove' : ''}`}
             onClick={handleClick}
         >
             <FontAwesomeIcon icon={faUser} style={userIconStyles} />

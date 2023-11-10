@@ -9,6 +9,7 @@ nav {
     z-index: 1100;
     max-width: 100vw;
 
+
     .nav-wrapper {
         display: flex;
         justify-content: space-between;
@@ -18,6 +19,8 @@ nav {
         img {
             width: 100px;
         }
+
+
 
         .nav-menu,
         .show-mobile-menu {
@@ -88,13 +91,13 @@ nav {
             right: 0;
             padding: 20px 0px;
             background-color: rgba($color: #000000, $alpha: 0.7);
-            transition: 1s ease-in-out;
             opacity: 0;
             transform: translateY(-120%);
             z-index: 5;
         }
 
         .show-mobile-menu {
+            transition: 1s ease-in-out;
             opacity: 1;
             transform: translateY(0);
         }

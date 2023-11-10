@@ -7,16 +7,19 @@ function CheckoutForm() {
             name: 'personName',
             type: 'text',
             header: 'Name and family name*',
+            defaultValue: 'John Smith'
         },
         {
             name: 'city',
             type: 'text',
             header: 'City*',
+            defaultValue: 'New York'
         },
         {
             name: 'street',
             type: 'text',
             header: 'Street*',
+            defaultValue: 'New Street 84'
         },
         {
             name: 'apartment',
@@ -68,6 +71,7 @@ function CheckoutForm() {
                                 name={input.name}
                                 id={input.name}
                                 required={input.required}
+                                defaultValue={input.defaultValue}
                             />
                         </>
                     );

@@ -3,7 +3,7 @@ import './YourOrdersSections.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
     faArrowCircleLeft,
-    faArrowCircleRight,
+    faArrowRightToBracket,
 } from '@fortawesome/free-solid-svg-icons';
 
 // const cartProductsTest = []
@@ -158,7 +158,7 @@ const YourOrdersSections = () => {
                             <span>{totalPrice.toFixed(2)}$</span>
                         </div>
                         <div className="toCheckout" onClick={confirmButton}>
-                            Checkout ({totalPrice.toFixed(2)}$)
+                            CHECKOUT <FontAwesomeIcon icon={faArrowRightToBracket} />
                         </div>
                     </div>
                 ) : null}

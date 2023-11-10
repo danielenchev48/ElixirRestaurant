@@ -6,7 +6,7 @@ import { LocationContext } from './LocationTracker';
 import { Button, ProgressBar } from 'react-bootstrap';
 import Collapse from 'react-bootstrap/Collapse';
 import TimerHeading from './TimerHeading';
-import deliveryCarI from '../../assets/images/deliverycar.png'
+import deliveryCarI from '../../assets/images/deliveryCar.png'
 import homeI from '../../assets/images/home2.png'
 import restaurantI from '../../assets/images/pizzaria.png'
 

@@ -24,7 +24,7 @@ function Footer() {
                     <div className="col-md-3 mb-md-0 mb-3 env ">
                         <h5 className="text-uppercase">Environment</h5>
                         <ul className="list-unstyled envList">
-                            <li><a href="https://github.com/">Github</a> - hosting and code hosting</li>
+                            <li><a href="https://github.com/">Github</a> - web and code hosting</li>
                             <li><a href="https://www.mongodb.com/">MongoDB</a> - database</li>
                             <li><a href="https://vitejs.dev/">ViteJS</a> - build system</li>
                             <li><a href="https://www.atlassian.com/software/jira">Jira</a> - tracking tool</li>
