@@ -21,7 +21,7 @@ function CheckoutOption() {
                                 icon={faCreditCard}
                                 className="icon"
                             />
-                            Cash
+                            Credit Card
                         </label>
                     </div>
                     <div className="cardOption option">
@@ -33,7 +33,7 @@ function CheckoutOption() {
                         />
                         <label htmlFor="card">
                             <FontAwesomeIcon icon={faWallet} className="icon" />
-                            Credit card
+                            Cash
                         </label>
                     </div>
                 </div>
