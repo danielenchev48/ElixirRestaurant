@@ -106,7 +106,7 @@ const YourOrdersSections = () => {
                 </div>
                 <h2>Menu</h2>
                 <div className="ordersList">
-                    {cartProducts.length ? (
+                    {cartProducts?.length ? (
                         cartProducts.map((product) => {
                             const price =
                                 parseFloat(product.price) * product.quantity;
@@ -143,7 +143,7 @@ const YourOrdersSections = () => {
                         <p className="addMeals">Add meals for your order</p>
                     )}
                 </div>
-                {cartProducts.length ? (
+                {cartProducts?.length ? (
                     <div className="buyInfo">
                         <div className="calculation">
                             <p>Price</p>
