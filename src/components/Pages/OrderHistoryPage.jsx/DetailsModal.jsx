@@ -44,9 +44,8 @@ const DetailsModal = ({
     return (
         <>
             <div
-                className={`details-modal ${
-                    show && 'animate__animated animate__fadeInDown'
-                }`}
+                className={`details-modal ${show && 'animate__animated animate__fadeInDown'
+                    }`}
             >
                 <div className="details-modal-header">
                     <h3>Order #{orderNumber}</h3>
@@ -64,10 +63,9 @@ const DetailsModal = ({
                             {orderData.items
                                 .map(
                                     (item) =>
-                                        `${item.product} ${
-                                            item.quantity > 1
-                                                ? `x${item.quantity}`
-                                                : ''
+                                        `${item.product} ${item.quantity > 1
+                                            ? `x${item.quantity}`
+                                            : ''
                                         } - $${item.price}`,
                                 )
                                 .join(', ')}
