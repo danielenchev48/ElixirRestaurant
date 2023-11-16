@@ -19,6 +19,10 @@ Technologies used: ReactJS, ViteJS, NodeJS, JavaScript, Bootstrap, SASS, CSS, Mo
 
 ![menu](https://github.com/danielenchev48/ElixirRestaurant/assets/123250898/4556eca7-3182-4fba-bae2-b3f45ddcecf8)
 
+<h2 align='center'>Gallery</h2>
+
+![gallery](https://github.com/danielenchev48/ElixirRestaurant/assets/123250898/20b656d2-7ccb-4b05-840c-3323416005b0)
+
 <h2 align='center'>Orders</h2>
 
 ![order](https://github.com/danielenchev48/ElixirRestaurant/assets/123250898/f9cafc50-9cff-4e4a-a701-2bd0e2514d79)
