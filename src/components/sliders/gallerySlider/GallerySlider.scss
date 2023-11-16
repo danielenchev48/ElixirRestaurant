@@ -1,0 +1,87 @@
+.aboutCarousel {
+
+    &.main {
+        height: 35vw;
+        position: relative;
+        margin-bottom: 20px;
+
+        @media screen and (max-width:900px) {
+            height: 45vh;
+        }
+
+        .slick-list {
+            height: 100%;
+
+            .slick-track {
+                height: 100%;
+
+                .slick-slide {
+                    >div {
+                        width: 100%;
+                        height: 100%;
+
+                        .slider {
+                            height: 100%;
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: url(../../../assets/images/sliderBorder.png);
+            background-size: 100% 100%;
+        }
+    }
+
+    &.list {
+        background-size: cover;
+        border-top: groove;
+        border-bottom: ridge;
+        padding: 5px 0;
+        box-shadow: 5px 0px 20px 5px rgba(0, 0, 0, 0.344);
+
+        .slick-track {
+            display: flex;
+            gap: 30px;
+
+            .slick-slide {
+
+                >div {
+                    height: 100px;
+                    width: 100%;
+
+                    &:hover {
+                        border: groove darkred;
+                    }
+
+                    .slider {
+                        height: 100%;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}

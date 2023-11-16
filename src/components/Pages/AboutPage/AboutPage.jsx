@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import './AboutPage.scss';
 
 import SectionComponentTemplate from '../../../templates/SectionComponentTemplate/SectionComponentTemplate';
@@ -9,7 +9,9 @@ import AboutHeading from '../../Headings/AboutHeading';
 import SliderFood from './sliders/SliderFood';
 import SliderPlaces from './sliders/SliderPlaces';
 
+
 const AboutPage = () => {
+
     return (
         <>
             <SectionComponentTemplate

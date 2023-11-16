@@ -15,6 +15,7 @@ import galleryData from './galleryData';
 import { Container, Row, Col } from 'react-bootstrap';
 import GalleryItem from './GalleryItem';
 import 'animate.css';
+import GallerySlider from '../../sliders/gallerySlider/GallerySlider';
 
 const GalleryPage = () => {
     return (
@@ -23,6 +24,7 @@ const GalleryPage = () => {
             <img src={rightSideImage} className="right-side-img" />
             <img src={leftSideImage} className="second-left-side-img" />
             <img src={rightDessertImage} className="dessert-right-side-img" />
+            <GallerySlider />
             <GalleryHeading />
             <Container className="mt-5">
                 <Row className="justify-content-center">

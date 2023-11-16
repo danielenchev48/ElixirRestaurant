@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import SlickSlider from '../../../assets/slickSlider/SlickSlider';
-import { PrevArrow, NextArrow } from './arrows/Arrows';
+import { PrevArrow, NextArrow } from './arrows/Arrows.jsx';
 import styles from './HeaderSlider.module.scss';
 import { CSSTransition } from 'react-transition-group';
 import React from 'react';

@@ -1,5 +1,6 @@
 @import '../../../index.scss';
 
+
 @keyframes test {
     0% {
         top: 10%;
@@ -29,6 +30,8 @@
                 display: none !important;
             }
         }
+
+
     }
 
     img {
@@ -37,8 +40,11 @@
     }
 }
 
+
 .headerBox {
     position: relative;
+
+
 }
 
 .SliderWrapper {
@@ -55,6 +61,8 @@
     row-gap: 5%;
     justify-content: flex-start;
     padding-top: 3%;
+
+
 
     .sliderLogo {
         height: 40%;

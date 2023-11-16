@@ -9,7 +9,7 @@ import Map from '../../Map/Map';
 
 const HomePage = () => {
     return (
-        <div>
+        <div className='home'>
             <HeaderSlider />
             <AboutPage />
             <MenuSectionComponent />

@@ -1,43 +1,46 @@
 $prevArrowImg: url(../../../../assets/images/btn-prev.png);
 $nextArrowImg: url(../../../../assets/images/btn-next.png);
 
-.slick-prev,
-.slick-next {
-    z-index: 1;
-    width: auto;
-}
+.home {
 
-.slick-prev {
-    left: 5px !important;
-}
+    .slick-prev,
+    .slick-next {
+        z-index: 1;
+        width: auto;
+    }
 
-.slick-next {
-    right: 6% !important;
-}
+    .slick-prev {
+        left: 5px !important;
+    }
 
-.slick-prev::before {
-    background: $prevArrowImg;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -ms-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    content: '';
-    width: 6vw;
-    height: 6vw;
-    display: inline-block;
-    background-size: cover;
-    border-radius: 100%;
-    color: transparent !important;
-}
+    .slick-next {
+        right: 6% !important;
+    }
 
-.slick-next::before {
-    background-image: $nextArrowImg;
-    content: '';
-    width: 6vw;
-    height: 6vw;
-    display: inline-block;
-    background-size: cover;
-    border-radius: 100%;
-    color: transparent !important;
+    .slick-prev::before {
+        background: $prevArrowImg;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -ms-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        content: '';
+        width: 6vw;
+        height: 6vw;
+        display: inline-block;
+        background-size: cover;
+        border-radius: 100%;
+        color: transparent !important;
+    }
+
+    .slick-next::before {
+        background-image: $nextArrowImg;
+        content: '';
+        width: 6vw;
+        height: 6vw;
+        display: inline-block;
+        background-size: cover;
+        border-radius: 100%;
+        color: transparent !important;
+    }
 }

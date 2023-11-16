@@ -55,8 +55,7 @@
         "react-transition-group": "^4.4.5",
         "redux": "^4.2.1",
         "sass": "^1.63.6",
-        "slick-carousel": "^1.8.1",
-        "swiper": "^11.0.4"
+        "slick-carousel": "^1.8.1"
     },
     "devDependencies": {
         "@types/react": "^18.0.37",
