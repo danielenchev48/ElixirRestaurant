@@ -10,11 +10,11 @@ $nextArrowImg: url(../../../../assets/images/btn-next.png);
     }
 
     .slick-prev {
-        left: 5px !important;
+        left: 5px;
     }
 
     .slick-next {
-        right: 6% !important;
+        right: 5px;
     }
 
     .slick-prev::before {
@@ -30,7 +30,7 @@ $nextArrowImg: url(../../../../assets/images/btn-next.png);
         display: inline-block;
         background-size: cover;
         border-radius: 100%;
-        color: transparent !important;
+        color: transparent;
     }
 
     .slick-next::before {
@@ -41,6 +41,6 @@ $nextArrowImg: url(../../../../assets/images/btn-next.png);
         display: inline-block;
         background-size: cover;
         border-radius: 100%;
-        color: transparent !important;
+        color: transparent;
     }
 }
